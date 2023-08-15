@@ -1,6 +1,6 @@
 package com.chibbol.wtz.domain.vote.repository;
 
-import com.chibbol.wtz.domain.vote.entity.VoteTurnRecord;
+import com.chibbol.wtz.domain.record.entiry.VoteTurnRecord;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

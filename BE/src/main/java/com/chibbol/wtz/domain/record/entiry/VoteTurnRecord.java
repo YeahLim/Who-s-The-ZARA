@@ -1,4 +1,4 @@
-package com.chibbol.wtz.domain.vote.entity;
+package com.chibbol.wtz.domain.record.entiry;
 
 import lombok.Builder;
 import lombok.Getter;
