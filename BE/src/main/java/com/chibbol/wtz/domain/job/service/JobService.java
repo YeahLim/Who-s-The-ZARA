@@ -117,7 +117,7 @@ public class JobService {
         if (mafiaCount > 0 && mafia != null) {
             availableJobs.clear();
             availableJobs.add(mafia);
-            mafiaCount--;
+            mafiaCount = mafiaCount - 1;
         }
 
         return availableJobs;
