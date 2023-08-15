@@ -2,9 +2,9 @@ package com.chibbol.wtz.domain.job.controlller;
 
 import com.chibbol.wtz.domain.job.dto.TargetUserDTO;
 import com.chibbol.wtz.domain.job.entity.RoomUserJob;
-import com.chibbol.wtz.domain.job.entity.UserAbilityRecord;
 import com.chibbol.wtz.domain.job.repository.RoomUserJobRedisRepository;
-import com.chibbol.wtz.domain.job.repository.UserAbilityRecordRedisRepository;
+import com.chibbol.wtz.domain.record.entiry.UserAbilityRecord;
+import com.chibbol.wtz.domain.record.repository.UserAbilityRecordRedisRepository;
 import com.chibbol.wtz.global.stomp.dto.DataDTO;
 import com.chibbol.wtz.global.stomp.service.RedisPublisher;
 import com.chibbol.wtz.global.timer.service.NewTimerService;

@@ -1,12 +1,11 @@
 package com.chibbol.wtz.domain.point.conroller;
 
-import com.chibbol.wtz.domain.job.entity.UserAbilityLog;
-import com.chibbol.wtz.domain.job.repository.UserAbilityLogRepository;
 import com.chibbol.wtz.domain.point.dto.PointResultDTO;
 import com.chibbol.wtz.domain.point.entity.UserPointValue;
 import com.chibbol.wtz.domain.point.repository.UserPointValueRedisRepository;
 import com.chibbol.wtz.domain.point.service.PointService;
-import com.chibbol.wtz.domain.user.entity.User;
+import com.chibbol.wtz.domain.record.entiry.UserAbilityLog;
+import com.chibbol.wtz.domain.record.repository.UserAbilityLogRepository;
 import com.chibbol.wtz.domain.user.service.UserService;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.responses.ApiResponse;

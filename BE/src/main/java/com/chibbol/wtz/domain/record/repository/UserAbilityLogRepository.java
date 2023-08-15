@@ -1,7 +1,7 @@
-package com.chibbol.wtz.domain.job.repository;
+package com.chibbol.wtz.domain.record.repository;
 
 import com.chibbol.wtz.domain.job.entity.Job;
-import com.chibbol.wtz.domain.job.entity.UserAbilityLog;
+import com.chibbol.wtz.domain.record.entiry.UserAbilityLog;
 import com.chibbol.wtz.domain.user.entity.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;

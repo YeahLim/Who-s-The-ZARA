@@ -1,5 +1,6 @@
-package com.chibbol.wtz.domain.job.entity;
+package com.chibbol.wtz.domain.record.entiry;
 
+import com.chibbol.wtz.domain.job.entity.Job;
 import com.chibbol.wtz.domain.user.entity.User;
 import lombok.Builder;
 import lombok.Getter;

@@ -1,14 +1,14 @@
 package com.chibbol.wtz.global.timer.service;
 
 import com.chibbol.wtz.domain.job.entity.RoomUserJob;
-import com.chibbol.wtz.domain.job.entity.UserAbilityLog;
-import com.chibbol.wtz.domain.job.entity.UserAbilityRecord;
 import com.chibbol.wtz.domain.job.repository.RoomUserJobRedisRepository;
-import com.chibbol.wtz.domain.job.repository.UserAbilityLogRepository;
-import com.chibbol.wtz.domain.job.repository.UserAbilityRecordRedisRepository;
 import com.chibbol.wtz.domain.job.service.JobService;
 import com.chibbol.wtz.domain.level.service.UserLevelService;
 import com.chibbol.wtz.domain.point.service.PointService;
+import com.chibbol.wtz.domain.record.entiry.UserAbilityLog;
+import com.chibbol.wtz.domain.record.entiry.UserAbilityRecord;
+import com.chibbol.wtz.domain.record.repository.UserAbilityLogRepository;
+import com.chibbol.wtz.domain.record.repository.UserAbilityRecordRedisRepository;
 import com.chibbol.wtz.domain.room.dto.CurrentSeatsDTO;
 import com.chibbol.wtz.domain.room.entity.Room;
 import com.chibbol.wtz.domain.room.repository.GameRepository;

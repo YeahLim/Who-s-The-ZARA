@@ -1,6 +1,6 @@
-package com.chibbol.wtz.domain.job.repository;
+package com.chibbol.wtz.domain.record.repository;
 
-import com.chibbol.wtz.domain.job.entity.UserAbilityTurnRecord;
+import com.chibbol.wtz.domain.record.entiry.UserAbilityTurnRecord;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

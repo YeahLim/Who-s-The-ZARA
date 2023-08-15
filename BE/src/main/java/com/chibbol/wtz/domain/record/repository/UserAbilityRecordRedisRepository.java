@@ -1,6 +1,6 @@
-package com.chibbol.wtz.domain.job.repository;
+package com.chibbol.wtz.domain.record.repository;
 
-import com.chibbol.wtz.domain.job.entity.UserAbilityRecord;
+import com.chibbol.wtz.domain.record.entiry.UserAbilityRecord;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import lombok.AllArgsConstructor;

@@ -1,10 +1,10 @@
-package com.chibbol.wtz.domain.job.service;
+package com.chibbol.wtz.domain.record.service;
 
-import com.chibbol.wtz.domain.job.dto.RecentRecordDTO;
 import com.chibbol.wtz.domain.job.entity.Job;
-import com.chibbol.wtz.domain.job.entity.UserAbilityLog;
 import com.chibbol.wtz.domain.job.repository.JobRepository;
-import com.chibbol.wtz.domain.job.repository.UserAbilityLogRepository;
+import com.chibbol.wtz.domain.record.dto.RecentRecordDTO;
+import com.chibbol.wtz.domain.record.entiry.UserAbilityLog;
+import com.chibbol.wtz.domain.record.repository.UserAbilityLogRepository;
 import com.chibbol.wtz.domain.user.entity.User;
 import com.chibbol.wtz.domain.user.exception.UserNotFoundException;
 import com.chibbol.wtz.domain.user.service.UserService;

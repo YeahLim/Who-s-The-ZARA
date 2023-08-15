@@ -1,10 +1,9 @@
 package com.chibbol.wtz.domain.vote.service;
 
 import com.chibbol.wtz.domain.job.entity.RoomUserJob;
-import com.chibbol.wtz.domain.job.entity.UserAbilityRecord;
 import com.chibbol.wtz.domain.job.repository.JobRepository;
 import com.chibbol.wtz.domain.job.repository.RoomUserJobRedisRepository;
-import com.chibbol.wtz.domain.job.repository.UserAbilityRecordRedisRepository;
+import com.chibbol.wtz.domain.record.repository.UserAbilityRecordRedisRepository;
 import com.chibbol.wtz.domain.vote.dto.VoteDTO;
 import com.chibbol.wtz.domain.vote.dto.VoteResultDTO;
 import com.chibbol.wtz.domain.vote.entity.Vote;

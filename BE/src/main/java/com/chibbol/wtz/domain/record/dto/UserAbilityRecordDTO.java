@@ -1,4 +1,4 @@
-package com.chibbol.wtz.domain.job.dto;
+package com.chibbol.wtz.domain.record.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

@@ -1,7 +1,7 @@
-package com.chibbol.wtz.domain.job.controlller;
+package com.chibbol.wtz.domain.record.controller;
 
-import com.chibbol.wtz.domain.job.dto.RecentRecordDTO;
-import com.chibbol.wtz.domain.job.service.RecordService;
+import com.chibbol.wtz.domain.record.dto.RecentRecordDTO;
+import com.chibbol.wtz.domain.record.service.RecordService;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.responses.ApiResponse;
 import io.swagger.v3.oas.annotations.responses.ApiResponses;

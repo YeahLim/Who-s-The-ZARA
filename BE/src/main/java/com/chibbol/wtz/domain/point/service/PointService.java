@@ -1,11 +1,11 @@
 package com.chibbol.wtz.domain.point.service;
 
-import com.chibbol.wtz.domain.job.entity.UserAbilityLog;
 import com.chibbol.wtz.domain.point.dto.PointResultDTO;
 import com.chibbol.wtz.domain.point.entity.Point;
 import com.chibbol.wtz.domain.point.entity.UserPointValue;
 import com.chibbol.wtz.domain.point.repository.PointRepository;
 import com.chibbol.wtz.domain.point.repository.UserPointValueRedisRepository;
+import com.chibbol.wtz.domain.record.entiry.UserAbilityLog;
 import com.chibbol.wtz.domain.room.exception.GameNotFoundException;
 import com.chibbol.wtz.domain.user.entity.User;
 import com.chibbol.wtz.domain.user.exception.UserNotFoundException;

@@ -1,15 +1,14 @@
 package com.chibbol.wtz.domain.level.controller;
 
-import com.chibbol.wtz.domain.job.entity.UserAbilityLog;
-import com.chibbol.wtz.domain.job.repository.UserAbilityLogRepository;
 import com.chibbol.wtz.domain.level.dto.LevelResultDTO;
 import com.chibbol.wtz.domain.level.dto.UserLevelDataDTO;
 import com.chibbol.wtz.domain.level.entity.UserExpValue;
 import com.chibbol.wtz.domain.level.entity.UserLevel;
-import com.chibbol.wtz.domain.level.repository.UserExpValueRedisRepository;
 import com.chibbol.wtz.domain.level.repository.UserLevelRepository;
 import com.chibbol.wtz.domain.level.service.UserLevelService;
 import com.chibbol.wtz.domain.level.service.WeightMappingService;
+import com.chibbol.wtz.domain.record.entiry.UserAbilityLog;
+import com.chibbol.wtz.domain.record.repository.UserAbilityLogRepository;
 import com.chibbol.wtz.domain.user.entity.User;
 import com.chibbol.wtz.domain.user.service.UserService;
 import lombok.RequiredArgsConstructor;

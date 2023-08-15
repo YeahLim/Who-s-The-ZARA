@@ -1,18 +1,17 @@
 package com.chibbol.wtz.domain.level.service;
 
-import com.chibbol.wtz.domain.job.entity.UserAbilityLog;
 import com.chibbol.wtz.domain.level.config.WeightProperties;
 import com.chibbol.wtz.domain.level.dto.LevelResultDTO;
 import com.chibbol.wtz.domain.level.entity.UserExpValue;
 import com.chibbol.wtz.domain.level.entity.UserLevel;
 import com.chibbol.wtz.domain.level.repository.UserExpValueRedisRepository;
 import com.chibbol.wtz.domain.level.repository.UserLevelRepository;
+import com.chibbol.wtz.domain.record.entiry.UserAbilityLog;
 import com.chibbol.wtz.domain.room.exception.GameNotFoundException;
 import com.chibbol.wtz.domain.user.entity.User;
 import com.chibbol.wtz.domain.user.exception.UserNotFoundException;
 import com.chibbol.wtz.domain.user.repository.UserRepository;
 import com.chibbol.wtz.domain.user.service.UserService;
-import com.sun.nio.sctp.PeerAddressChangeNotification;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
