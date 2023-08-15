@@ -72,7 +72,7 @@ public class UserLevelService {
 
         // 각 가중치 구해서 Map에 저장
         for(UserAbilityLog userAbilityLog: userAbilityLogs) {
-            userWeight.put(userAbilityLog.getUser(), getUserWeight(userAbilityLog, jobWeightMap, userWeight));
+            userWeight.put(userAbilityLog.getUser(), getUserWeight(userAbilityLog, jobWeightMap));
         }
 
         // 각 유저별 가중치랑 곱해서 exp 저장
@@ -126,10 +126,10 @@ public class UserLevelService {
         userLevelRepository.save(userLevel.update(UserLevel.builder().level(level).exp(userExp).build()));
     }
 
-    private Double getUserWeight(UserAbilityLog userAbilityLog, Map<Long, Double> jobWeightMap, Map<User, Double> userWeight){
+    private Double getUserWeight(UserAbilityLog userAbilityLog, Map<Long, Double> jobWeightMap){
         Double gameResultWeight = 0.0;
-        Double jobWeight = 0.0;
-        Double abilityWeight = 0.0;
+        Double jobWeight;
+        Double abilityWeight;
 
         // 직업별 가중치
         jobWeight = jobWeightMap.get(userAbilityLog.getJob().getJobSeq());
