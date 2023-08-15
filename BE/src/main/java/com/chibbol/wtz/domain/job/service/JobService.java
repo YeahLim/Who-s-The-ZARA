@@ -72,12 +72,13 @@ public class JobService {
         List<RoomUserJob> joinUser = roomUserJobRedisRepository.findAllByGameCode(gameCode);
         List<Long> excludeJobSeq = roomJobSettingRedisRepository.findExcludeJobSeqByGameCode(gameCode);
         Job mafia = jobRepository.findByName("Mafia");
-        int mafiaCount = (joinUser.size() >= 8) ? 2 : 1;
+        Integer mafiaCount = (joinUser.size() >= 8) ? 2 : 1; // Integer로 변경
 
         Collections.shuffle(joinUser);
 
         for (RoomUserJob roomUserJob : joinUser) {
-            assignRandomJob(gameCode, roomUserJob, excludeJobSeq, mafia, mafiaCount);
+            // mafiaCount 값을 메서드 호출 후 반환값으로 업데이트
+            mafiaCount = assignRandomJob(gameCode, roomUserJob, excludeJobSeq, mafia, mafiaCount);
         }
 
         logRandomJobAssignment(gameCode, joinUser);
@@ -85,7 +86,7 @@ public class JobService {
         return roomUserJobRedisRepository.findAllByGameCode(gameCode);
     }
 
-    private void assignRandomJob(String gameCode, RoomUserJob roomUserJob, List<Long> excludeJobSeq, Job mafia, int mafiaCount) {
+    private Integer assignRandomJob(String gameCode, RoomUserJob roomUserJob, List<Long> excludeJobSeq, Job mafia, Integer mafiaCount) {
         List<Job> availableJobs = getAvailableJobs(excludeJobSeq, mafia, mafiaCount);
 
         // 랜덤 직업 배정
@@ -105,6 +106,8 @@ public class JobService {
                 .canVote(true)
                 .isAlive(true)
                 .build());
+
+        return mafiaCount - 1; // 값 감소 후 반환
     }
 
     // 사용 가능한 직업 목록 조회
@@ -117,7 +120,6 @@ public class JobService {
         if (mafiaCount > 0 && mafia != null) {
             availableJobs.clear();
             availableJobs.add(mafia);
-            mafiaCount = mafiaCount - 1;
         }
 
         return availableJobs;
@@ -381,9 +383,9 @@ public class JobService {
         logGameStateInfo(roomUserJobs, citizenCount, mafiaCount);
 
         if (isMafiaVictory(mafiaCount)) {
-            return saveUserAbilityRecord(gameCode, false);
-        } else if (isCitizenVictory(mafiaCount, citizenCount)) {
             return saveUserAbilityRecord(gameCode, true);
+        } else if (isCitizenVictory(mafiaCount, citizenCount)) {
+            return saveUserAbilityRecord(gameCode, false);
         }
 
         return null;
